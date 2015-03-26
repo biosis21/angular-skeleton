@@ -1,0 +1,8 @@
+{
+
+
+    "sass": {
+        "src": "./workspace/styles/*.scss",
+        "dest": "./build/styles"
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "build": "./build",
+    "work": "./workspace",
+    "sass": {
+        "src": "./workspace/styles/*.scss",
+        "dest": "./build/styles"
+    },
+    "copy": {
+        "src": [
+            "./workspace/images/**/*",
+            "./workspace/fonts/**/*"
+        ],
+        "dest": [
+            "./build/images",
+            "./build/fonts"
+        ]
+    },
+    "server": {
+        "host": "localhost",
+        "port": 4000,
+        "livereload": true
+    },
+    "html": {
+        "src": "./workspace/scripts/**/*.html",
+        "dest": "./build/scripts/app/templates"
+    },
+    "script": {
+        "src": [
+            "./workspace/scripts/**/*.js"
+        ],
+        "dest": "./build/"
+    }
+}

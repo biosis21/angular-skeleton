@@ -1,0 +1,90 @@
+/* -------- variables ------------ */
+
+/* ----------- fonts ------------- */
+$font-arial: "Arial";
+
+/* ----------- colors ------------ */
+$color-success: #0daf05;
+$color-error: #b7303b;
+$color-warning: #fcf8e3;
+$color-info: #eaf2fa;
+
+/* ----------- reset ------------ */
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+::-webkit-input-placeholder {
+    color: #333;
+}
+::-moz-placeholder {
+    color: #333;
+}
+:-ms-input-placeholder {
+    color: #333;
+}
+input:-moz-placeholder {
+    color: #333;
+}
+input,
+button {
+    border: none;
+    text-shadow: none;
+}
+input::-ms-clear {
+    display: none;
+}
+a {
+    text-decoration: none;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+body {
+    font: normal 14px/1 $font-arial;
+    color: #333;
+    min-height: 100%;
+    position: relative;
+}
+body,
+html {
+    height: 100%;
+}
+input {
+    font-size: 12px;
+    color: #333;
+    font-weight: normal;
+    background-color: #fff;
+    border: 1px solid #c2c2c2;
+    padding: 0 10px;
+    border-radius: 4px;
+    height: 33px;
+    outline: none;
+    &:focus {
+        border-color: #ccc;
+    }
+}
+button,
+input[type=submit] {
+    &:enabled {
+        cursor: pointer;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+/* Angular form validation configuration style */
+.ng-invalid.ng-dirty {
+    border-color: $color-error;
+}
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+  display: none !important;
+}

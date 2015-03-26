@@ -1,0 +1,10 @@
+.DS_Store
+node_modules/
+.idea/
+.log*
+
+# Ignoring local builds (CI build the project)
+build/
+
+#Ignoring tests reports.
+/tests/reports/
