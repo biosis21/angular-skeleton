@@ -20,6 +20,6 @@ define(function ( require, exports, module ) {
         /**
          * Define and Require Controllers.
          */
-        .controller('MyControllerCtrl', require('./controllers/my-controller.ctrl'))
+        .controller('MyControllerCtrl', require('./controllers/my-controller.ctrl'));
 
 });

@@ -5,6 +5,7 @@ require('./gulp_tasks/script');
 require('./gulp_tasks/html');
 require('./gulp_tasks/sass');
 require('./gulp_tasks/copy');
+require('./gulp_tasks/jshint');
 require('./gulp_tasks/server');
 
 gulp.task('default', ['clean'], function () {
@@ -12,10 +13,12 @@ gulp.task('default', ['clean'], function () {
         'copy',
         'html',
         'script',
+        'jshint',
         'sass',
         'server',
         'watch-html',
         'watch-script',
+        'watch-jshint',
         'watch-copy',
         'watch-sass');
 });
