@@ -2,50 +2,66 @@
 
 ### Table of Contents
 
-- [Basic folders structure](#basic-structure)
+- [Required](#required)
+- [Dependencies](#dependencies)
+- [Installation](#installation)
+- [Installing a new third-party library via NPM](#new-with-npm)
+- [Installing a new third-party library via Bower](#new-with-bower)
 
-### Basic folders structure
+### Required
 
-### Getting started
+- [NodeJS](https://nodejs.org/download/) <NodeJS>
+    
+### Dependencies 
+
+- [AngularJS](https://angularjs.org/) <angular>
+- [AngularUI Router](https://github.com/angular-ui/ui-router) <angular-ui-router>
+- [AngularJS Resource](https://github.com/angular/bower-angular-resource) <angular-resource>
+- [AngularJS Mocks](https://github.com/angular/angular-mocks) <angular-mocks>
+- [RequireJS](http://requirejs.org/) <requirejs>
+- [jQuery](http://jquery.com/) <jquery>
+
+### Installation
 
 Install **Gulp**:
-
-```shell
-npm install -g gulp
+    
+```bash
+   $ npm install -g gulp
+```
+   
+Install **Bower** and configure it:
+    
+```bash  
+   $ npm install -g bower && bower init
 ```
 
-Install package manager for the web - **Bower** and configure it:
+Install all NPM dependencies:
 
-```shell
-npm install -g bower && bower init
+```bash
+   $ npm install
 ```
 
-### Installing a new third-party library via Bower
+### <a href="#new-with-npm">Installing a new third-party library via NPM</a>
 
+```bash
+   $ npm install {--save|--save-dev} <package_name>
 ```
-bower install {--save|--save-dev} <package_name>
+
+Learn more information about [install options](https://docs.npmjs.com/files/package.json#local-paths).
+
+All third-party libraries for the client-side development are located in `workspace/scripts/vendors` folder.
+
+
+### <a href="#new-with-bower">Installing a new third-party library via Bower</a>
+
+```bash
+   $ bower install {--save|--save-dev|--production|--force-latest} <package_name>
 ```
 
-> --save - for production ("dependencies")
-> --save-dev - for development ("devDependencies")
+Learn more information about [install options](http://bower.io/docs/api/#install-options). 
 
-> All third-party libraries are located in **workspace/scripts/vendors** folder.
-
-The list of most useful libraries which you should use:
-
- * [AngularJS](https://angularjs.org/) <angular>
- * [AngularUI Router](https://github.com/angular-ui/ui-router) <angular-ui-router>
- * [AngularJS Resource](https://github.com/angular/bower-angular-resource) <angular-resource>
- * [RequireJS](http://requirejs.org/) <requirejs>
- * [jQuery](http://jquery.com/) <jquery>
-
-### Install Gulp
-
-The first step is an installation **Gulp**
-
-```
-npm install --save-dev gulp
-```
+All third-party libraries for the client-side development are located in `workspace/scripts/vendors` folder. 
+The **.bowerrc** file configures destination folder and [etc](http://bower.io/docs/config/#bowerrc-specificatio).
 
 
 
