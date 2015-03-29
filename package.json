@@ -1,12 +1,16 @@
 {
-  "name": "newcomer",
-  "version": "1.0.0",
-  "description": "croydon",
+  "name": "Angular Skeleton",
+  "version": "0.1.2",
+  "description": "Angular Skeleton",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Nikolay Savenko <smy@ciklum.com>",
+  "engines": {
+    "node": "~0.12.1",
+    "npm" : "~2.5.1"
+  },
+  "author": "Nikolay Savenko <biosis21@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "bower": "^1.3.12",

@@ -2,9 +2,8 @@
  * @ngdoc Service
  * @name CommonService
  * @memberOf <App.Services>
- * @author Nikolay Savenko <smy@ciklum.com>
+ * @author Nikolay Savenko <biosis@gmail.com>
  * @description This is a common service.
- * @copyright 2014 Ciklum. All rights reserved.
  */
 
 define(function () {

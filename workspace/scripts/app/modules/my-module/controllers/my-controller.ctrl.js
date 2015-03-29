@@ -7,8 +7,7 @@
  *
  * @description
  *
- * @author
- * @copyright 2014 Ciklum. All rights reserved.
+ * @author Nikolay Savenko <biosis@gmail.com>
  */
 
 define(function () {
