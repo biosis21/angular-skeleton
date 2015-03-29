@@ -6,8 +6,7 @@
  *
  * @description This is a common repository.
  *
- * @author Nikolay Savenko <smy@ciklum.com>
- * @copyright 2014 Ciklum. All rights reserved.
+ * @author Nikolay Savenko <biosis@gmail.com>
  */
 
 define(function () {
