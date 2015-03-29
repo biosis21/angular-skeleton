@@ -1,8 +1,8 @@
 {
-  "name": "croydon",
+  "name": "Angular Skeleton",
   "version": "1.0.0",
   "authors": [
-    "Nikolay Savenko <smy@ciklum.com>"
+    "Nikolay Savenko <biosis21@gmail.com>"
   ],
   "license": "MIT",
   "private": true,
