@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=yes">
+    <title>Croydon</title>
+
+    <link rel="stylesheet" href="styles/index.css">
+
+</head>
+<body>
+
+    <!-- start: wrapper -->
+    <div class="b-wrapper">
+
+        <!-- start: header -->
+        <ui-view name="header" class="b-header"></ui-view>
+        <!-- end: header -->
+
+        <!-- start: content -->
+        <ui-view name="content" class="b-content"></ui-view>
+        <!-- end: content -->
+
+    </div>
+    <!-- end: wrapper -->
+
+    <!-- start: footer -->
+    <ui-view name="footer" class="b-footer"></ui-view>
+    <!-- end: footer -->
+
+    <script data-main="scripts/app/bootstrap.js" src="scripts/vendors/requirejs/require.js"></script>
+</body>
+</html>

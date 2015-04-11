@@ -1,0 +1,7 @@
+define([
+	"./arr"
+], function( arr ) {
+	return arr.indexOf;
+});
+
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiIiwic291cmNlcyI6WyJzY3JpcHRzL3ZlbmRvcnMvanF1ZXJ5L3NyYy92YXIvaW5kZXhPZi5qcyJdLCJzb3VyY2VzQ29udGVudCI6WyJkZWZpbmUoW1xuXHRcIi4vYXJyXCJcbl0sIGZ1bmN0aW9uKCBhcnIgKSB7XG5cdHJldHVybiBhcnIuaW5kZXhPZjtcbn0pO1xuIl0sImZpbGUiOiJzY3JpcHRzL3ZlbmRvcnMvanF1ZXJ5L3NyYy92YXIvaW5kZXhPZi5qcyIsInNvdXJjZVJvb3QiOiIvc291cmNlLyJ9

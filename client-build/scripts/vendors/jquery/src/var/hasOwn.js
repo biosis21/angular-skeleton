@@ -1,0 +1,7 @@
+define([
+	"./class2type"
+], function( class2type ) {
+	return class2type.hasOwnProperty;
+});
+
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiIiwic291cmNlcyI6WyJzY3JpcHRzL3ZlbmRvcnMvanF1ZXJ5L3NyYy92YXIvaGFzT3duLmpzIl0sInNvdXJjZXNDb250ZW50IjpbImRlZmluZShbXG5cdFwiLi9jbGFzczJ0eXBlXCJcbl0sIGZ1bmN0aW9uKCBjbGFzczJ0eXBlICkge1xuXHRyZXR1cm4gY2xhc3MydHlwZS5oYXNPd25Qcm9wZXJ0eTtcbn0pO1xuIl0sImZpbGUiOiJzY3JpcHRzL3ZlbmRvcnMvanF1ZXJ5L3NyYy92YXIvaGFzT3duLmpzIiwic291cmNlUm9vdCI6Ii9zb3VyY2UvIn0=

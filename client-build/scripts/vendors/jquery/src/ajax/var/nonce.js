@@ -1,0 +1,7 @@
+define([
+	"../../core"
+], function( jQuery ) {
+	return jQuery.now();
+});
+
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiIiwic291cmNlcyI6WyJzY3JpcHRzL3ZlbmRvcnMvanF1ZXJ5L3NyYy9hamF4L3Zhci9ub25jZS5qcyJdLCJzb3VyY2VzQ29udGVudCI6WyJkZWZpbmUoW1xuXHRcIi4uLy4uL2NvcmVcIlxuXSwgZnVuY3Rpb24oIGpRdWVyeSApIHtcblx0cmV0dXJuIGpRdWVyeS5ub3coKTtcbn0pO1xuIl0sImZpbGUiOiJzY3JpcHRzL3ZlbmRvcnMvanF1ZXJ5L3NyYy9hamF4L3Zhci9ub25jZS5qcyIsInNvdXJjZVJvb3QiOiIvc291cmNlLyJ9

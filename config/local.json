@@ -1,9 +1,9 @@
 {
-    "build": "./build",
+    "build": "./client-build",
     "work": "./client",
     "sass": {
         "src": "./client/styles/*.scss",
-        "dest": "./build/styles"
+        "dest": "./client-build/styles"
     },
     "copy": {
         "src": [
@@ -11,8 +11,8 @@
             "./client/fonts/**/*"
         ],
         "dest": [
-            "./build/images",
-            "./build/fonts"
+            "./client-build/images",
+            "./client-build/fonts"
         ]
     },
     "server": {
@@ -22,12 +22,12 @@
     },
     "html": {
         "src": "./client/scripts/**/*.html",
-        "dest": "./build/scripts/app/templates"
+        "dest": "./client-build/scripts/app/templates"
     },
     "script": {
         "src": [
             "./client/scripts/**/*.js"
         ],
-        "dest": "./build/"
+        "dest": "./client-build/"
     }
 }

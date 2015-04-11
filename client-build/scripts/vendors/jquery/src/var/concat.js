@@ -1,0 +1,7 @@
+define([
+	"./arr"
+], function( arr ) {
+	return arr.concat;
+});
+
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiIiwic291cmNlcyI6WyJzY3JpcHRzL3ZlbmRvcnMvanF1ZXJ5L3NyYy92YXIvY29uY2F0LmpzIl0sInNvdXJjZXNDb250ZW50IjpbImRlZmluZShbXG5cdFwiLi9hcnJcIlxuXSwgZnVuY3Rpb24oIGFyciApIHtcblx0cmV0dXJuIGFyci5jb25jYXQ7XG59KTtcbiJdLCJmaWxlIjoic2NyaXB0cy92ZW5kb3JzL2pxdWVyeS9zcmMvdmFyL2NvbmNhdC5qcyIsInNvdXJjZVJvb3QiOiIvc291cmNlLyJ9

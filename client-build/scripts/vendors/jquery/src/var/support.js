@@ -1,0 +1,6 @@
+define(function() {
+	// All support tests are defined in their respective modules.
+	return {};
+});
+
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiIiwic291cmNlcyI6WyJzY3JpcHRzL3ZlbmRvcnMvanF1ZXJ5L3NyYy92YXIvc3VwcG9ydC5qcyJdLCJzb3VyY2VzQ29udGVudCI6WyJkZWZpbmUoZnVuY3Rpb24oKSB7XG5cdC8vIEFsbCBzdXBwb3J0IHRlc3RzIGFyZSBkZWZpbmVkIGluIHRoZWlyIHJlc3BlY3RpdmUgbW9kdWxlcy5cblx0cmV0dXJuIHt9O1xufSk7XG4iXSwiZmlsZSI6InNjcmlwdHMvdmVuZG9ycy9qcXVlcnkvc3JjL3Zhci9zdXBwb3J0LmpzIiwic291cmNlUm9vdCI6Ii9zb3VyY2UvIn0=

@@ -1,0 +1,5 @@
+define(function() {
+	return (/^(?:checkbox|radio)$/i);
+});
+
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiIiwic291cmNlcyI6WyJzY3JpcHRzL3ZlbmRvcnMvanF1ZXJ5L3NyYy9tYW5pcHVsYXRpb24vdmFyL3JjaGVja2FibGVUeXBlLmpzIl0sInNvdXJjZXNDb250ZW50IjpbImRlZmluZShmdW5jdGlvbigpIHtcblx0cmV0dXJuICgvXig/OmNoZWNrYm94fHJhZGlvKSQvaSk7XG59KTtcbiJdLCJmaWxlIjoic2NyaXB0cy92ZW5kb3JzL2pxdWVyeS9zcmMvbWFuaXB1bGF0aW9uL3Zhci9yY2hlY2thYmxlVHlwZS5qcyIsInNvdXJjZVJvb3QiOiIvc291cmNlLyJ9
