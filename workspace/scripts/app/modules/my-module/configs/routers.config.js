@@ -1,6 +1,6 @@
 define(function () {
     "use strict";
-    return ['$stateProvider', function ( $stateProvider ) {
+    return ['$stateProvider', function ($stateProvider) {
 
         /**
          * Description all routers.
