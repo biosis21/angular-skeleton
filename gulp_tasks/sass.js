@@ -3,10 +3,12 @@ var gulp       = require('gulp'),
     watch      = require('gulp-watch'),
     connect    = require('gulp-connect'),
     sourcemaps = require('gulp-sourcemaps'),
+    plumber    = require('gulp-plumber'),
     CONFIG     = require('../config');
 
 gulp.task('sass', function () {
     return gulp.src(CONFIG.sass.src)
+        .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(sass({
             errLogToConsole: true

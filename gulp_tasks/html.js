@@ -5,12 +5,12 @@ var gulp          = require('gulp'),
     templateCache = require('gulp-angular-templatecache'),
     preprocess    = require('gulp-preprocess'),
     minifyHtml    = require('gulp-minify-html'),
+    plumber       = require('gulp-plumber'),
     CONFIG        = require('../config');
-
-// TODO: will change CONFIG to PATHS
 
 gulp.task('html', ['index-html'], function () {
     return gulp.src(CONFIG.html.src)
+        .pipe(plumber())
         .pipe(rename(function ( path ) {
             path.dirname = path.dirname.replace(/(\\|\/)(modules|templates)/g, '');
             return path;
@@ -29,7 +29,8 @@ gulp.task('html', ['index-html'], function () {
 });
 
 gulp.task('index-html', function () {
-    return gulp.src('./workspace/index.html')
+    return gulp.src('./client/index.html')
+        .pipe(plumber())
         .pipe(preprocess({
             context: {
                 isCompressed: false
@@ -39,11 +40,11 @@ gulp.task('index-html', function () {
 });
 
 gulp.task('watch-html', function () {
-    watch([CONFIG.html.src, './workspace/index.html'], function () {
+    watch([CONFIG.html.src, './client/index.html'], function () {
         gulp.start('html')
     });
 });
-/*
+
  gulp.task('html:mini', function () {
  return gulp.src(CONFIG.html.src, {
  base: CONFIG.work
@@ -59,4 +60,4 @@ gulp.task('watch-html', function () {
  quotes: true
  }))
  .pipe(gulp.dest(CONFIG.html.dest));
- });*/
+ })

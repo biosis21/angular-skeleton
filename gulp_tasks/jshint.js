@@ -1,15 +1,17 @@
-var gulp = require('gulp'),
-    jshint = require('gulp-jshint');
+var gulp    = require('gulp'),
+    jshint  = require('gulp-jshint'),
+    plumber = require('gulp-plumber');
 
 var hintPath = [
-    './workspace/scripts/**/*.js',
-    '!./workspace/scripts/vendors/**/*'
+    './client/scripts/**/*.js',
+    '!./client/scripts/vendors/**/*'
 ];
 
 gulp.task('jshint', function() {
     return gulp.src(hintPath)
-    .pipe(jshint())
-    .pipe(jshint.reporter());
+        .pipe(plumber())
+        .pipe(jshint())
+        .pipe(jshint.reporter());
 });
 
 gulp.task('watch-jshint', function() {

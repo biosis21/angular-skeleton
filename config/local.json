@@ -1,18 +1,18 @@
 {
-    "build": "./build",
-    "work": "./workspace",
+    "build": "./client-build",
+    "work": "./client",
     "sass": {
-        "src": "./workspace/styles/*.scss",
-        "dest": "./build/styles"
+        "src": "./client/styles/*.scss",
+        "dest": "./client-build/styles"
     },
     "copy": {
         "src": [
-            "./workspace/images/**/*",
-            "./workspace/fonts/**/*"
+            "./client/images/**/*",
+            "./client/fonts/**/*"
         ],
         "dest": [
-            "./build/images",
-            "./build/fonts"
+            "./client-build/images",
+            "./client-build/fonts"
         ]
     },
     "server": {
@@ -21,13 +21,13 @@
         "livereload": true
     },
     "html": {
-        "src": "./workspace/scripts/**/*.html",
-        "dest": "./build/scripts/app/templates"
+        "src": "./client/scripts/**/*.html",
+        "dest": "./client-build/scripts/app/templates"
     },
     "script": {
         "src": [
-            "./workspace/scripts/**/*.js"
+            "./client/scripts/**/*.js"
         ],
-        "dest": "./build/"
+        "dest": "./client-build/"
     }
 }

@@ -3,5 +3,5 @@ node_modules/
 .idea/
 .log*
 
-build/
-tests/reports/
+client-build/
+client/scripts/vendors/
