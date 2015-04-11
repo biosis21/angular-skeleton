@@ -1,5 +1,0 @@
-angular.module("templates", []).run(["$templateCache", function($templateCache) {$templateCache.put("templates/app/common/cr-dropdown.tmpl.html","<div class=\"b-select {{ddClass}}\"><div ng-click=\"toggleVisibilityMenu()\"><input type=\"text\" class=\"b-select__field\" ng-class=\"{ \'b-select__field_active\': isOpen }\" value=\"{{selected}}\" ng-readonly=\"true\"> <button type=\"button\" class=\"b-select__btn\" ng-class=\"{ \'b-select__field_active\': isOpen }\"></button></div><ul class=\"b-select__list\" ng-show=\"isOpen\"><li class=\"b-select__item\" ng-repeat=\"(k, o) in list\" ng-click=\"chooseItem(k)\">{{::o.name}}</li></ul></div>");
-$templateCache.put("templates/app/main/footer.tmpl.html","<h1>Footer</h1>");
-$templateCache.put("templates/app/main/header.tmpl.html","<h1>Header</h1>");
-$templateCache.put("templates/app/my-module/my-directive.tmpl.html","");
-$templateCache.put("templates/app/my-module/my-template.tmpl.html","<h1>My Controller</h1>");}]);

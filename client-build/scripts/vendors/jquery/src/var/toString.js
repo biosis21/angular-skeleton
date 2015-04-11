@@ -1,7 +1,0 @@
-define([
-	"./class2type"
-], function( class2type ) {
-	return class2type.toString;
-});
-
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiIiwic291cmNlcyI6WyJzY3JpcHRzL3ZlbmRvcnMvanF1ZXJ5L3NyYy92YXIvdG9TdHJpbmcuanMiXSwic291cmNlc0NvbnRlbnQiOlsiZGVmaW5lKFtcblx0XCIuL2NsYXNzMnR5cGVcIlxuXSwgZnVuY3Rpb24oIGNsYXNzMnR5cGUgKSB7XG5cdHJldHVybiBjbGFzczJ0eXBlLnRvU3RyaW5nO1xufSk7XG4iXSwiZmlsZSI6InNjcmlwdHMvdmVuZG9ycy9qcXVlcnkvc3JjL3Zhci90b1N0cmluZy5qcyIsInNvdXJjZVJvb3QiOiIvc291cmNlLyJ9

@@ -1,6 +1,0 @@
-define(function() {
-	// [[Class]] -> type pairs
-	return {};
-});
-
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiIiwic291cmNlcyI6WyJzY3JpcHRzL3ZlbmRvcnMvanF1ZXJ5L3NyYy92YXIvY2xhc3MydHlwZS5qcyJdLCJzb3VyY2VzQ29udGVudCI6WyJkZWZpbmUoZnVuY3Rpb24oKSB7XG5cdC8vIFtbQ2xhc3NdXSAtPiB0eXBlIHBhaXJzXG5cdHJldHVybiB7fTtcbn0pO1xuIl0sImZpbGUiOiJzY3JpcHRzL3ZlbmRvcnMvanF1ZXJ5L3NyYy92YXIvY2xhc3MydHlwZS5qcyIsInNvdXJjZVJvb3QiOiIvc291cmNlLyJ9

@@ -1,7 +1,0 @@
-define([
-	"./arr"
-], function( arr ) {
-	return arr.slice;
-});
-
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiIiwic291cmNlcyI6WyJzY3JpcHRzL3ZlbmRvcnMvanF1ZXJ5L3NyYy92YXIvc2xpY2UuanMiXSwic291cmNlc0NvbnRlbnQiOlsiZGVmaW5lKFtcblx0XCIuL2FyclwiXG5dLCBmdW5jdGlvbiggYXJyICkge1xuXHRyZXR1cm4gYXJyLnNsaWNlO1xufSk7XG4iXSwiZmlsZSI6InNjcmlwdHMvdmVuZG9ycy9qcXVlcnkvc3JjL3Zhci9zbGljZS5qcyIsInNvdXJjZVJvb3QiOiIvc291cmNlLyJ9
