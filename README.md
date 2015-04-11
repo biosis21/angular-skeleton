@@ -8,7 +8,7 @@
 - [Installing a new third-party library via NPM](#new-with-npm)
 - [Installing a new third-party library via Bower](#new-with-bower)
 
-### Required
+### Requires
 
 - [NodeJS](https://nodejs.org/download/) <NodeJS>
     
@@ -23,25 +23,19 @@
 
 ### Installation
 
-Install **Gulp**:
+Install **Gulp** and **Bower**:
     
 ```bash
-   $ npm install -g gulp
-```
-   
-Install **Bower** and configure it:
-    
-```bash  
-   $ npm install -g bower && bower init
+   $ npm install -g gulp bower
 ```
 
-Install all NPM dependencies:
+Install all NPM and Bower dependencies:
 
 ```bash
-   $ npm install
+   $ npm install && bower install
 ```
 
-### <a href="#new-with-npm">Installing a new third-party library via NPM</a>
+### Installing a new third-party library via NPM
 
 ```bash
    $ npm install {--save|--save-dev} <package_name>
@@ -52,7 +46,7 @@ Learn more information about [install options](https://docs.npmjs.com/files/pack
 All third-party libraries for the client-side development are located in `workspace/scripts/vendors` folder.
 
 
-### <a href="#new-with-bower">Installing a new third-party library via Bower</a>
+### Installing a new third-party library via Bower
 
 ```bash
    $ bower install {--save|--save-dev|--production|--force-latest} <package_name>

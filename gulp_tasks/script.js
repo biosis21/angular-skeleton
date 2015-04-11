@@ -28,10 +28,10 @@ gulp.task('script:mini', function () {
     var requirejs = require('requirejs');
 
     return requirejs.optimize({
-        baseUrl:                 './workspace/scripts/app',
+        baseUrl:                 './client/scripts/app',
         name:                    'bootstrap',
         out:                     './build/scripts/bootstrap.min.js',
-        mainConfigFile:          './workspace/scripts/app/bootstrap.js',
+        mainConfigFile:          './client/scripts/app/bootstrap.js',
         include:                 ['../vendors/requirejs/require'],
         waitSeconds:             0,
         optimize:                'uglify2',

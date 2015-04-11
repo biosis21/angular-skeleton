@@ -1,14 +1,14 @@
 {
     "build": "./build",
-    "work": "./workspace",
+    "work": "./client",
     "sass": {
-        "src": "./workspace/styles/*.scss",
+        "src": "./client/styles/*.scss",
         "dest": "./build/styles"
     },
     "copy": {
         "src": [
-            "./workspace/images/**/*",
-            "./workspace/fonts/**/*"
+            "./client/images/**/*",
+            "./client/fonts/**/*"
         ],
         "dest": [
             "./build/images",
@@ -21,12 +21,12 @@
         "livereload": true
     },
     "html": {
-        "src": "./workspace/scripts/**/*.html",
+        "src": "./client/scripts/**/*.html",
         "dest": "./build/scripts/app/templates"
     },
     "script": {
         "src": [
-            "./workspace/scripts/**/*.js"
+            "./client/scripts/**/*.js"
         ],
         "dest": "./build/"
     }

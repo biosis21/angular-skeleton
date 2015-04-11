@@ -4,4 +4,4 @@ node_modules/
 .log*
 
 build/
-tests/reports/
+client/scripts/vendors/

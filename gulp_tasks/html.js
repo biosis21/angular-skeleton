@@ -29,7 +29,7 @@ gulp.task('html', ['index-html'], function () {
 });
 
 gulp.task('index-html', function () {
-    return gulp.src('./workspace/index.html')
+    return gulp.src('./client/index.html')
         .pipe(plumber())
         .pipe(preprocess({
             context: {
@@ -40,7 +40,7 @@ gulp.task('index-html', function () {
 });
 
 gulp.task('watch-html', function () {
-    watch([CONFIG.html.src, './workspace/index.html'], function () {
+    watch([CONFIG.html.src, './client/index.html'], function () {
         gulp.start('html')
     });
 });

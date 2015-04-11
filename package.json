@@ -4,7 +4,9 @@
   "description": "Angular Skeleton",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bower": "bower install",
+    "start": "gulp"
   },
   "engines": {
     "node": "~0.12.2",
