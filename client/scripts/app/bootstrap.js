@@ -30,10 +30,6 @@ require.config({
             location: './modules/main'
         },
         {
-            name: 'App.Common',
-            location: './common'
-        },
-        {
             name: 'App.MyModule',
             location: './modules/my-module'
         }

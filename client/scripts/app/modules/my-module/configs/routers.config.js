@@ -8,10 +8,11 @@ define(function () {
         $stateProvider
 
             // Authorization list Page.
-            .state('main.my-route', {
+            .state('my-route', {
                 url: '/my-route',
+                parent: 'main',
                 views: {
-                    'content@': {
+                    'content': {
                         controller: 'MyControllerCtrl',
                         templateUrl: 'templates/app/my-module/my-template.tmpl.html'
                     }
