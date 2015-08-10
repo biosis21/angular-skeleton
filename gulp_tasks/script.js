@@ -3,7 +3,8 @@ var gulp       = require('gulp'),
     connect    = require('gulp-connect'),
     sourcemaps = require('gulp-sourcemaps'),
     plumber    = require('gulp-plumber'),
-    CONFIG     = require('../config');
+    CONFIG     = require('../config'),
+    browserSync = require("browser-sync").create();
 
 gulp.task('script', function () {
     return gulp.src(CONFIG.script.src, {
@@ -13,15 +14,11 @@ gulp.task('script', function () {
         .pipe(sourcemaps.init())
         .pipe(sourcemaps.write())
         .pipe(gulp.dest(CONFIG.script.dest))
-        .pipe(connect.reload());
+        .pipe(browserSync.reload({stream:true}));
 });
 
-gulp.task('watch-script', function () {
-    watch(CONFIG.script.src, {
-        base: CONFIG.work
-    }, function () {
-        gulp.start('script')
-    });
+gulp.task('watch-script', ['script', 'browser-sync'], function () {
+  gulp.watch(CONFIG.script.src, ['script']);
 });
 
 gulp.task('script:mini', function () {

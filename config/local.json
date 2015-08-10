@@ -18,6 +18,7 @@
     "server": {
         "host": "localhost",
         "port": 4000,
+        "fallback": "./client-build/index.html",
         "livereload": true
     },
     "html": {

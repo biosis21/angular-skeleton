@@ -8,6 +8,6 @@ gulp.task('server', function () {
         root:       CONFIG.build,
         host:       CONFIG.server.host,
         port:       CONFIG.server.port,
-        livereload: CONFIG.server.livereload
+        fallback:   CONFIG.server.fallback
     });
 });

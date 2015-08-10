@@ -6,7 +6,8 @@ var gulp          = require('gulp'),
     preprocess    = require('gulp-preprocess'),
     minifyHtml    = require('gulp-minify-html'),
     plumber       = require('gulp-plumber'),
-    CONFIG        = require('../config');
+    CONFIG        = require('../config'),
+    browserSync = require("browser-sync").create();
 
 gulp.task('html', ['index-html'], function () {
     return gulp.src(CONFIG.html.src)
@@ -22,10 +23,10 @@ gulp.task('html', ['index-html'], function () {
         }))
         .pipe(templateCache({
             standalone: true,
-            root:       './templates'
+            root:       'templates/'
         }))
         .pipe(gulp.dest(CONFIG.html.dest))
-        .pipe(connect.reload());
+        .pipe(browserSync.reload({stream:true}));
 });
 
 gulp.task('index-html', function () {
@@ -44,20 +45,3 @@ gulp.task('watch-html', function () {
         gulp.start('html')
     });
 });
-
- gulp.task('html:mini', function () {
- return gulp.src(CONFIG.html.src, {
- base: CONFIG.work
- })
- .pipe(preprocess({
- context: {
- isCompressed: true
- }
- }))
- .pipe(minifyHtml({
- empty:  true,
- spare:  true,
- quotes: true
- }))
- .pipe(gulp.dest(CONFIG.html.dest));
- })

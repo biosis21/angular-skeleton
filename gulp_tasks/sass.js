@@ -1,10 +1,10 @@
 var gulp       = require('gulp'),
     sass       = require('gulp-sass'),
-    watch      = require('gulp-watch'),
-    connect    = require('gulp-connect'),
     sourcemaps = require('gulp-sourcemaps'),
     plumber    = require('gulp-plumber'),
-    CONFIG     = require('../config');
+    CONFIG     = require('../config'),
+    browserSync = require('browser-sync'),
+    reload      = browserSync.reload;
 
 gulp.task('sass', function () {
     return gulp.src(CONFIG.sass.src)
@@ -15,11 +15,9 @@ gulp.task('sass', function () {
         }))
         .pipe(sourcemaps.write())
         .pipe(gulp.dest(CONFIG.sass.dest))
-        .pipe(connect.reload());
+        .pipe(reload({stream:true}));
 });
 
-gulp.task('watch-sass', function () {
-    watch(CONFIG.sass.src, function () {
-        gulp.start('sass')
-    });
+gulp.task('watch-sass', ['sass', 'browser-sync'], function () {
+    gulp.watch(CONFIG.sass.src, ['sass']);
 });

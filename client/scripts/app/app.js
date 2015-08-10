@@ -34,8 +34,15 @@ define(function(require, exports, module) {
      * Configuring App Module
      */
     app.constant("CONSTANTS", require('./configs/constants.config'))
-        .config(require('./configs/routers.config'))
         .run(require('./configs/events.config'));
+
+    app.config(['$locationProvider', function($locationProvider) {
+        $locationProvider.html5Mode(true).hashPrefix(' ');
+    }]);
+
+    app.run(["$rootScope", "$state", function ($rootScope, $state) {
+        $rootScope.$state = $state; // state to be accessed from view
+    }]);
 
     angular.element(document.documentElement).ready(function () {
         angular.bootstrap(document, [app.name]);
