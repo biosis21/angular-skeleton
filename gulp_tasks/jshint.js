@@ -1,6 +1,8 @@
 var gulp    = require('gulp'),
     jshint  = require('gulp-jshint'),
-    plumber = require('gulp-plumber');
+    jscs = require('gulp-jscs'),
+    plumber = require('gulp-plumber'),
+    stylish = require('gulp-jscs-stylish');
 
 var hintPath = [
     './client/scripts/**/*.js',
@@ -11,7 +13,9 @@ gulp.task('jshint', function() {
     return gulp.src(hintPath)
         .pipe(plumber())
         .pipe(jshint())
-        .pipe(jshint.reporter());
+        .pipe(jscs())
+        .pipe(stylish())
+        .pipe(stylish.combineWithHintResults());
 });
 
 gulp.task('watch-jshint', function() {
