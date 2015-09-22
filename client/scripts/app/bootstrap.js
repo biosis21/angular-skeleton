@@ -6,7 +6,8 @@ require.config({
         'angularResource':  '../vendors/angular-resource/angular-resource.min',
         'angularMatch':     '../vendors/angular-match/angular-match.min',
         'angularTemplates': './templates/templates',
-        'jquery':           '../vendors/jquery/dist/jquery'
+        'jquery':           '../vendors/jquery/dist/jquery',
+        'App':              'app'
     },
     priority: [
         'jquery', 'angular'
